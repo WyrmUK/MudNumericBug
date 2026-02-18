@@ -1,0 +1,13 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+<p>Welcome to your new app.</p>
+
+<MudNumericField @bind-Value="_value" Immediate="true" Pattern="[0-9]" Label="Enter more than 23 but less than 230" Min="0" Max="23" Variant="Variant.Outlined" />
+
+@code {
+    private int _value;
+}
